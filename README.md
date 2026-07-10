@@ -104,6 +104,8 @@ Open your browser at:
 
 ```
 http://localhost:8501
+or
+https://bank-customer-churn-prediction-ugfwxgafcpkktjvkcnvyld.streamlit.app/
 ```
 
 ---
@@ -156,5 +158,4 @@ pip install -r requirements.txt
 **Siddique ur Rehman**
 
 - GitHub: https://github.com/Siddique-ur-Rehman
-- LinkedIn: *(Add your LinkedIn profile URL here)*
 
