@@ -4,6 +4,7 @@
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.6.1-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://bank-customer-churn-prediction-ugfwxgafcpkktjvkcnvyld.streamlit.app/)
 
 A **Machine Learning web application** built with **Streamlit** that predicts whether a bank customer is likely to churn. The application provides real-time predictions and helps identify customers at risk of leaving, enabling proactive retention strategies.
 
