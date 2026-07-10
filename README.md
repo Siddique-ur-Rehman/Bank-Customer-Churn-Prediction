@@ -1,119 +1,180 @@
- Bank Customer Churn Prediction
-https://static.streamlit.io/badges/streamlit_badge_black_white.svg
-https://img.shields.io/badge/python-3.9+-blue.svg
-https://img.shields.io/badge/scikit--learn-1.6.1-orange.svg
-https://img.shields.io/badge/License-MIT-yellow.svg
+# 🏦 Bank Customer Churn Prediction
 
-📋 Overview
-A production-ready machine learning web application that predicts customer churn probability for banking institutions. Built with Streamlit and Scikit-learn, this tool helps financial organizations identify at-risk customers and implement proactive retention strategies.
+![Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-1.6.1-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Live Demo: https://[YOUR-APP-URL].streamlit.app
+A **Machine Learning web application** built with **Streamlit** that predicts whether a bank customer is likely to churn. The application provides real-time predictions and helps identify customers at risk of leaving, enabling proactive retention strategies.
 
-✨ Key Features
-Real-time Predictions: Instant churn risk assessment based on customer data
+---
 
-Interactive Dashboard: User-friendly 3-column layout with input validation
+## 🚀 Features
 
-Probability Scores: Provides churn confidence levels (100% accuracy on training data)
+- 🔍 Real-time customer churn prediction
+- 📊 Interactive and responsive Streamlit interface
+- 📈 Churn probability estimation *(if supported by the model)*
+- 💡 Actionable customer retention recommendations
+- 🎨 Professional, user-friendly dashboard
+- ⚡ Fast predictions using a trained Scikit-learn model
 
-Actionable Insights: Generates specific retention recommendations
+---
 
-Professional UI: Clean, responsive design with custom CSS styling
+## 🛠️ Tech Stack
 
-No Scrolling Needed: Compact layout fits on a single screen
+- **Python 3.9+**
+- **Streamlit**
+- **Scikit-learn**
+- **Pandas**
+- **Joblib**
 
-📊 Model Performance
-Metric	Score
-Accuracy	100%
-Precision (Class 0)	1.00
-Recall (Class 0)	1.00
-F1-Score (Class 0)	1.00
-Precision (Class 1)	1.00
-Recall (Class 1)	1.00
-F1-Score (Class 1)	1.00
-Confusion Matrix
-text
-Actual →  Predicted ↓
-              No    Yes
-    No       7963    0
-    Yes         0  2037
-🛠️ Technology Stack
-Frontend
-Streamlit - Interactive web framework
+---
 
-Custom CSS - Professional styling with card-based layout
+## 📂 Project Structure
 
-Responsive Design - Optimized for all screen sizes
-
-Backend
-Python 3.9+ - Core programming language
-
-Scikit-learn 1.6.1 - Machine learning algorithms
-
-Pandas - Data manipulation and preprocessing
-
-Joblib - Model serialization and loading
-
-Machine Learning Pipeline
-Preprocessing: StandardScaler for numerical features, OneHotEncoder for categorical features
-
-Model: DecisionTreeClassifier (can be switched to LogisticRegression)
-
-📁 Project Structure
-text
+```text
 ML-Projects/
-├── app.py                      # Main Streamlit application
-├── churn_model.pkl             # Trained machine learning model
-├── requirements.txt            # Python dependencies
-├── README.md                   # Project documentation
-├── .streamlit/
-│   └── config.toml            # Streamlit configuration
-└── [model_training_notebook].ipynb  # Model training code
-🔧 Installation & Setup
-Prerequisites
-Python 3.9 or higher
+│
+├── app.py                 # Streamlit application
+├── churn_model.pkl        # Trained ML model
+├── requirements.txt
+├── README.md
+└── model_training.ipynb   # Model training notebook
+```
 
-pip package manager
+---
 
-Git (optional)
+## 📊 Dataset Features
 
-Local Development
-Clone the repository
+The model predicts churn using the following customer information:
 
-bash
+- Credit Score
+- Country
+- Gender
+- Age
+- Tenure
+- Balance
+- Number of Products
+- Credit Card Ownership
+- Active Membership
+- Estimated Salary
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/Siddique-ur-Rehman/ML-Projects.git
 cd ML-Projects
-Create and activate virtual environment
+```
 
-bash
-# Windows
+### 2. Create a virtual environment
+
+**Windows**
+
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
-# macOS/Linux
+**Linux/macOS**
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
-Install dependencies
+```
 
-bash
+### 3. Install dependencies
+
+```bash
 pip install -r requirements.txt
-Run the application
+```
 
-bash
+### 4. Run the application
+
+```bash
 streamlit run app.py
-Access the app
-Open your browser and navigate to http://localhost:8501
+```
 
-📊 Dataset Information
-The model is trained on a banking customer dataset with 10,000 entries and 12 features:
+Open your browser at:
 
-Features
-Feature	Type	Description
-credit_score	Integer	Customer's credit score (300-900)
-country	Categorical	France, Spain, or Germany
-gender	Categorical	Male or Female
-age	Integer	Customer's age in years
-tenure	Integer	Years with the bank (0-10)
-balance	Float	Account balance in dollars
-products_number	Integer	Number of bank products used (1-4)
-credit_card	
+```
+http://localhost:8501
+```
+
+---
+
+## 📈 Model Performance
+
+| Metric | Score |
+|---------|------:|
+| Accuracy | 100% |
+| Precision | 1.00 |
+| Recall | 1.00 |
+| F1-Score | 1.00 |
+
+> **Note:** These results are from the current trained model and may vary depending on the dataset and train-test split.
+
+---
+
+## 📸 Application Preview
+
+Add screenshots of your application here.
+
+```
+assets/
+├── home.png
+├── prediction.png
+```
+
+```markdown
+![Home Screen](assets/home.png)
+
+![Prediction Result](assets/prediction.png)
+```
+
+---
+
+## 📦 Requirements
+
+```text
+streamlit
+scikit-learn
+pandas
+joblib
+numpy
+```
+
+or simply install using:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔮 Future Improvements
+
+- Model explainability using SHAP
+- Feature importance visualization
+- Cloud deployment (Azure/AWS)
+- User authentication
+- Prediction history
+- REST API using FastAPI
+
+---
+
+## 👨‍💻 Author
+
+**Siddique ur Rehman**
+
+- GitHub: https://github.com/Siddique-ur-Rehman
+- LinkedIn: *(Add your LinkedIn profile URL here)*
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
