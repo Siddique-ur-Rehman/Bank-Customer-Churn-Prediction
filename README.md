@@ -33,7 +33,7 @@ A **Machine Learning web application** built with **Streamlit** that predicts wh
 ## 📂 Project Structure
 
 ```text
-ML-Projects/
+Bank-Customer-Churn-Prediction/
 │
 ├── app.py                 # Streamlit application
 ├── churn_model.pkl        # Trained ML model
@@ -66,8 +66,9 @@ The model predicts churn using the following customer information:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Siddique-ur-Rehman/ML-Projects.git
-cd ML-Projects
+git clone https://github.com/Siddique-ur-Rehman/Bank-Customer-Churn-Prediction.git
+cd Bank-Customer-Churn-Prediction
+
 ```
 
 ### 2. Create a virtual environment
@@ -117,23 +118,6 @@ http://localhost:8501
 
 > **Note:** These results are from the current trained model and may vary depending on the dataset and train-test split.
 
----
-
-## 📸 Application Preview
-
-Add screenshots of your application here.
-
-```
-assets/
-├── home.png
-├── prediction.png
-```
-
-```markdown
-![Home Screen](assets/home.png)
-
-![Prediction Result](assets/prediction.png)
-```
 
 ---
 
@@ -173,8 +157,3 @@ pip install -r requirements.txt
 - GitHub: https://github.com/Siddique-ur-Rehman
 - LinkedIn: *(Add your LinkedIn profile URL here)*
 
----
-
-## 📄 License
-
-This project is licensed under the **MIT License**.
